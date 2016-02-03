@@ -1,0 +1,42 @@
+@media screen and (max-width: 525px) {
+  /* ALLOWS FOR FLUID TABLES */
+  table[class="wrapper"] {
+    width: 100% !important; }
+  /* ADJUSTS LAYOUT OF LOGO IMAGE */
+  td[class="logo"] {
+    text-align: left;
+    padding: 20px 0 20px 0 !important; }
+  td[class="logo"] img {
+    margin: 0 auto !important; }
+  /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+  td[class="mobile-hide"] {
+    display: none; }
+  img[class="mobile-hide"] {
+    display: none !important; }
+  img[class="img-max"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important; }
+  /* FULL-WIDTH TABLES */
+  table[class="responsive-table"] {
+    width: 100% !important; }
+  /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+  td[class="section"] {
+    padding: 10px 5% 15px 5% !important; }
+  td[class="section--alpha"] {
+    padding: 10px 5% 10px 5% !important;
+    text-align: center; }
+  td[class="section--beta"] {
+    padding: 30px 5% 0px 5% !important;
+    text-align: center; }
+  /* ADJUST BUTTONS ON MOBILE */
+  td[class="mobile-wrapper"] {
+    padding: 10px 5% 15px 5% !important; }
+  table[class="mobile-button-container"] {
+    margin: 0 auto;
+    width: 100% !important; }
+  a[class="btn"] {
+    width: 80% !important;
+    padding: 15px !important;
+    border: 0 !important;
+    font-size: 16px !important; } }

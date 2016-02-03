@@ -1,0 +1,25 @@
+### SASS CACHE ###
+.sass-cache/
+
+
+### Compiled media ###
+#app/javascript/app.js
+#app/stylesheet/app.css
+
+
+### Node ###
+logs/
+*.log
+node_modules/
+
+
+### Vagrant ###
+.vagrant*/
+
+
+### OS X ###
+.DS_Store
+
+
+### Gitkeep directories ###
+!.gitkeep

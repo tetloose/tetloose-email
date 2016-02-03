@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+
+  background-color: #256F9C;
+
+  border-top: 15px solid #256F9C;
+  border-bottom: 15px solid #256F9C;
+  border-left: 25px solid #256F9C;
+  border-right: 25px solid #256F9C;
+  border-radius: 3px;
+
+  color: $white;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}

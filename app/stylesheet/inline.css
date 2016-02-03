@@ -1,0 +1,97 @@
+.u-hairline--top {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px; }
+
+.u-hairline--bottom {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px; }
+
+.u-hairline--left {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px; }
+
+.u-hairline--right {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px; }
+
+.u-hairline {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px; }
+
+.html,
+.body,
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.html,
+html {
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.body,
+body {
+  color: #000;
+  font-family: Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+td[class="section--alpha"] {
+  padding: 0 0 10px 0; }
+
+td[class="section--beta"] {
+  padding: 0 0 10px 0; }
+
+.btn {
+  display: inline-block;
+  background-color: #256F9C;
+  border-top: 15px solid #256F9C;
+  border-bottom: 15px solid #256F9C;
+  border-left: 25px solid #256F9C;
+  border-right: 25px solid #256F9C;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none; }
+
+.content {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px; }
+  .content small {
+    font-size: 14px;
+    line-height: 24px; }
+  .content h1, .content h2 {
+    color: #000;
+    font-size: 32px;
+    line-height: 40px; }
+  .content h3 {
+    color: #000;
+    font-size: 24px;
+    line-height: 32px; }
+  .content h4, .content h5 {
+    color: #000;
+    font-size: 22px;
+    line-height: 24px; }
+  .content h6 {
+    color: #000;
+    font-size: 20px;
+    line-height: 24px; }
+  .content p, .content li {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px; }
+  .content ul {
+    list-style-type: disc; }
+  .content ol {
+    list-style-type: decimal; }
+  .content h1 a, .content h2 a, .content h3 a, .content h4 a, .content h5 a, .content h6 a, .content p a, .content ul a, .content ol a, .content li a, .content dl a, .content dt a, .content dd a {
+    color: #000; }

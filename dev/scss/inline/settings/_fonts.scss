@@ -1,0 +1,29 @@
+// FONT FAMILY
+@mixin font-family($alt: false) {
+  @if $alt {
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  } @else {
+     font-family: Arial, "Lucida Grande", sans-serif;
+  }
+}
+
+// FONT WEIGHTS
+@mixin italic() {
+  font-style: italic;
+}
+
+@mixin light() {
+  font-weight: 300;
+}
+
+@mixin regular() {
+  font-weight: 400;
+}
+
+@mixin medium() {
+  font-weight: 500;
+}
+
+@mixin bold() {
+  font-weight: 700;
+}
