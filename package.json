@@ -17,13 +17,11 @@
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-connect-php": "0.0.7",
     "gulp-email-builder": "^1.0.4",
     "gulp-imagemin": "^2.2.1",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.0",
     "gulp-sass": "^2.0.4",
-    "gulp-sourcemaps": "^1.5.1",
     "imagemin-pngquant": "^4.1.0",
     "node-notifier": "^4.1.2",
     "run-sequence": "^1.1.5"
