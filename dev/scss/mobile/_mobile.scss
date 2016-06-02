@@ -1,68 +1,96 @@
 @media screen and (max-width: 525px) {
-  /* ALLOWS FOR FLUID TABLES */
-  table[class="wrapper"] {
+
+  // LAYOUT
+  table[class="l-row--540"],
+  table[class="l-row--500"] {
     width: 100% !important;
-  }
-
-  /* ADJUSTS LAYOUT OF LOGO IMAGE */
-  td[class="logo"] {
-    text-align: left;
-    padding: 20px 0 20px 0 !important;
-  }
-
-  td[class="logo"] img {
-    margin:0 auto!important;
-  }
-
-  /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
-  td[class="mobile-hide"] {
-    display: none;
-  }
-
-  img[class="mobile-hide"] {
-    display: none !important;
-  }
-
-  img[class="img-max"] {
+    min-width: 100% !important;
     max-width: 100% !important;
+  }
+
+  table[class="l-row--230"] {
+    float: left !important;
+    clear: both !important;
+    display: block !important;
     width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+
+  // HIDE ON MOBILE
+  td[class="hide-on--mobile"],
+  img[class="hide-on--mobile"] {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    visibility: none !important;
+
+    font-size: 0 !important;
+    line-height: 0 !important;
+  }
+
+
+  // SHOW ON MOBILE
+  td[class="show-on--mobile"],
+  img[class="show-on--mobile"] {
+    display: block !important;
+    width: auto !important;
+    min-width: auto !important;
+    max-width: auto !important;
+    height: auto !important;
+    min-height: none !important;
+    max-height: none !important;
+    visibility: visible !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+
+  // RESPONSIVE IMAGES
+  td[class="image--responsive-230-80"] img,
+  td[class="image--responsive-500-174"] img {
+    max-width: 100% !important;
+    min-width: 100% !important;
+    width: 100% !important;
+    max-height: auto !important;
+    min-height: auto !important;
     height: auto !important;
   }
 
-  /* FULL-WIDTH TABLES */
-  table[class="responsive-table"] {
-    width: 100% !important;
+  img[class="image--gmail-500-1"] {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    visibility: none !important;
+
+    font-size: 0 !important;
+    line-height: 0 !important;
   }
 
-  /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
-  td[class="section"] {
-    padding: 10px 5% 15px 5% !important;
+
+  // PADDING
+  td[class="padding--bottom-40"] {
+    padding: 0 5% 40px 5% !important;
   }
 
-  td[class="section--alpha"] {
-    padding: 10px 5% 10px 5% !important;
-    text-align: center;
+  td[class="padding--top-40"] {
+    padding: 40px 5% 0 5% !important;
   }
 
-  td[class="section--beta"] {
-    padding: 30px 5% 0px 5% !important;
-    text-align: center;
-  }
 
-  /* ADJUST BUTTONS ON MOBILE */
-  td[class="mobile-wrapper"] {
-    padding: 10px 5% 15px 5% !important;
-  }
-
-  table[class="mobile-button-container"] {
-    margin: 0 auto;
-    width: 100% !important;
-  }
-
-  a[class="btn"] {
+  // BUTTONS
+  .button {
     width: 80% !important;
-    padding: 15px !important;
-    border: 0 !important;
-    font-size: 16px !important;
+    margin: 0 auto !important;
   }
 }

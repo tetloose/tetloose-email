@@ -1,8 +1,8 @@
 // SETTINGS
 @import './inline/lib/color',
         './inline/lib/smoothing',
-        './inline/settings/fonts',
-        './inline/settings/colors';
+        './inline/settings/colors',
+        './inline/settings/fonts';
 
 
 // UTILITIES
@@ -12,11 +12,9 @@
 
 // THEME
 @import './inline/theme/htmlbody',
-        './inline/theme/header',
-        './inline/theme/footer',
-        './inline/theme/menus',
-        './inline/theme/nav',
-        './inline/theme/sections',
-        './inline/theme/buttons',
+        './inline/theme/layout',
+        './inline/theme/padding',
         './inline/theme/content',
-        './inline/theme/logos';
+        './inline/theme/button',
+        './inline/theme/image',
+        './inline/theme/show-on--mobile';

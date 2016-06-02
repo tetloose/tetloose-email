@@ -1,85 +1,38 @@
-.content {
+.content__heading-1 {
+  color: $black;
+  font-size: 40px;
+  line-height: 48px;
+  @include font-family();
+}
+
+.content__heading-2 {
+  color: $black;
+  font-size: 30px;
+  line-height: 38px;
+  @include font-family();
+}
+
+.content__paragraph {
   color: $black;
   font-size: 16px;
   line-height: 24px;
+  @include font-family();
+}
 
-  small {
-    font-size: 14px;
-    line-height: 24px;
-  }
+.content__small {
+  color: $black;
+  font-size: 14px;
+  line-height: 22px;
+  @include font-family();
+}
 
-  h1,h2 {
-    color: $black;
-    font-size: 32px;
-    line-height: 40px;
-  }
+.content__link a,
+.content__link {
+  color: $black;
+  text-decoration: none;
+  @include font-family();
 
-  h3 {
-    color: $black;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  h4,h5 {
-    color: $black;
-    font-size: 22px;
-    line-height: 24px;
-  }
-
-  h6 {
-    color: $black;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  p, li {
-    color: $black;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  ul,ol {
-
-  }
-
-  li {
-
-  }
-
-  ul {
-    list-style-type: disc;
-  }
-
-  ol {
-    list-style-type: decimal;
-  }
-
-  blockquote {
-    p {
-
-    }
-
-  }
-
-  h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd {
-    a {
-      color: $black;
-    }
-  }
-
-  .btn {
-
-  }
-
-  img {
-
-  }
-
-  hr {
-
-  }
-
-  br {
-
+  &:hover {
+    text-decoration: underline;
   }
 }

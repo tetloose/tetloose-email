@@ -1,0 +1,15 @@
+// HIDE ON DESKTOP SHOW ON MOBILE
+td[class="show-on--mobile"],
+img[class="show-on--mobile"] {
+  display: none;
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+  height: 0;
+  min-height: 0;
+  max-height: 0;
+  visibility: none;
+
+  font-size: 0;
+  line-height: 0;
+}
