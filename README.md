@@ -8,8 +8,7 @@
 ## Commands
 1. `npm run start` - Browser sync + watch
 2. `npm run images` - Image Minification
-3. `npm run test` - Test email on Litmus and Email
-4. `npm run build` - Build Email and generate zip
+3. `npm run build` - Add build files to zip
 
 ## Template Files
 1. html template `/dev/template/index.html`
@@ -20,15 +19,9 @@
 3. Mobile `/dev/scss/mobile.scss` - Embeded in head below reset
 
 ## Image minification
-1. Image folder `/build/images/`
+1. Image folder `/dev/images/`
 2. Run `npm run images`
-3. Images Minified
-
-## Testing Litmus & Email Accounts
-1. Gulp.js line 76,77 add Email test address and subject
-2. Make sure you have the correct litmus email address to recieve the email
-2. Run `npm run test`
-3. Goto Litmus see your tests
+3. Images Minified and moved to `/dest/images/`
 
 ## Usefull links
 `https://github.com/Email-builder/gulp-email-builder`
