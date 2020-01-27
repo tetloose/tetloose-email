@@ -38,7 +38,6 @@
     "gulp-load-plugins": "^2.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
     "imagemin-pngquant": "^8.0.0",
     "node-notifier": "^6.0.0",
     "require-dir": "^1.2.0"

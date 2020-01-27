@@ -1,7 +1,6 @@
 const gulp = require('gulp'),
       requireDir = require('require-dir'),
       tasks = requireDir('./'),
-      sourcemaps = require('gulp-sourcemaps'),
       plumber = require('gulp-plumber'),
       sass = require('gulp-sass'),
       autoprefixer = require('gulp-autoprefixer'),
