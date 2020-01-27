@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#COMMANDS
+# ./toolkit build
+
+#START TOOL KIT
+clear
+echo "Starting theme toolkit..."
+
+# ./toolkit build
+if [ "$1" = "build" ]; then
+  eval zip -r build-$(date +"%Y-%m-%d").zip build/images build/index.html
+  eval mv build-$(date +"%Y-%m-%d").zip build/zips/
+  echo "Build created $(date +"%Y-%m-%d");"
+else
+  echo "Stop saying that Withnail, of course he's the fucking farmer!"
+fi
