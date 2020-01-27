@@ -6,7 +6,6 @@ const gulp = require('gulp'),
       sass = require('gulp-sass'),
       autoprefixer = require('gulp-autoprefixer'),
       filter = require('gulp-filter'),
-      minifycss = require('gulp-cssnano'),
       browserSync = require('browser-sync');
 
 function scssError(e) {
