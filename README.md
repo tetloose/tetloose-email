@@ -8,10 +8,11 @@
 ## Commands
 1. `npm run start` - Browser sync + watch
 2. `npm run images` - Image Minification
-3. `npm run build` - Add build files to zip
+3. `npm run test` - Sends test email
+4. `npm run build` - Add build files to zip
 
 ## Template Files
-1. html template `/dev/template/index.html`
+1. html template `/dev/template/*.html`
 
 ## CSS
 1. Reset `/dev/scss/reset.scss` - Embeded in head
@@ -22,6 +23,25 @@
 1. Image folder `/dev/images/`
 2. Run `npm run images`
 3. Images Minified and moved to `/dest/images/`
+
+## Email Test
+1. Update .env test variables `line 14 - 17`
+```
+TEST_FILE = './build/index.html'
+TEST_EMAIL_TO = 'tetloose@gmail.com'
+TEST_EMAIL_FROM = 'tetloose@gmail.com'
+TEST_SUBJECT = 'Gulp Email Test'
+```
+2. Run `npm run test`
+3. Visit email client, look in `SPAM` folder
+
+## Build
+This builds a zip ready to be uploaded to mailchimp
+1. Run `npm run build`
+2. Copy html template name excluding the .html 
+3. Paste and hit `Enter`
+4. Zip file created by name and date, then moved to ./build/zips
+5. Upload this zip to `mailchimp`
 
 ## Usefull links
 `https://github.com/Email-builder/gulp-email-builder`

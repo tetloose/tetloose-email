@@ -29,12 +29,6 @@ gulp.task('styles', (cb) => {
   cb();
 });
 
-// Email Builder
-gulp.task('emailBuilder', (cb) => {
-  tasks.emailBuilder.dev(env);
-  cb();
-});
-
 // Browsersync
 gulp.task('browserSync', (cb) => {
   tasks.browserSync.default(env);
@@ -54,10 +48,24 @@ gulp.task('image:clean', (cb) => {
 
 gulp.task('images', gulp.parallel(['image:clean'], ['image:min'], ['notification:images']));
 
+// Email Builder
+gulp.task('emailBuilder', (cb) => {
+  tasks.emailBuilder.dev(env);
+  cb();
+});
+
+gulp.task('emailBuilder:test', (cb) => {
+  tasks.emailBuilder.test(env);
+  cb();
+});
+
+gulp.task('test', gulp.parallel(['image:clean'], ['image:min'], ['styles'], ['emailBuilder'], ['emailBuilder:test']));
+
 // Watch
-gulp.task('watch', () => {
+gulp.task('watch', (cb) => {
   gulp.watch([env.SCSS_FILES, env.HTML_FILES], gulp.series(['styles'], ['emailBuilder'], reload));
-  gulp.watch(env.IMG_FILES, gulp.series(['image:min'], reload));
+  gulp.watch(env.IMG_FILES, gulp.series(['images'], reload));
+  cb();
 });
 
 // Default

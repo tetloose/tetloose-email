@@ -9,8 +9,14 @@ echo "Starting theme toolkit..."
 
 # ./toolkit build
 if [ "$1" = "build" ]; then
-  eval zip -r build-$(date +"%Y-%m-%d").zip build/images build/index.html
-  eval mv build-$(date +"%Y-%m-%d").zip build/zips/
+  eval ls -lah build/*.html
+  read -p "What template would you like to build i.e index, email-title-1? " template
+  eval mkdir "$template"
+  eval cp ./build/"$template".html ./"$template"/index.html
+  eval cp -r ./build/images ./"$template"
+  eval zip -r "$template"-$(date +"%Y-%m-%d").zip ./"$template"
+  eval mv "$template"-$(date +"%Y-%m-%d").zip build/zips/
+  eval rm -rf ./"$template"
   echo "Build created $(date +"%Y-%m-%d");"
 else
   echo "Stop saying that Withnail, of course he's the fucking farmer!"

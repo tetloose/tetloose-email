@@ -3,6 +3,7 @@
   "scripts": {
     "start": "gulp",
     "images": "gulp images",
+    "test": "gulp test",
     "build": "./toolkit build"
   },
   "version": "0.0.1",
@@ -32,6 +33,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-email-builder-min": "0.0.1",
+    "gulp-email-builder": "^3.0.0",
     "gulp-filter": "^6.0.0",
     "gulp-hub": "^4.2.0",
     "gulp-imagemin": "^6.2.0",
