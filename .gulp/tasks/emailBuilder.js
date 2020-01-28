@@ -9,7 +9,9 @@ module.exports = {
     if (emailBuilderLoaded) {
       setTimeout(() => {
         return gulp.src([env.HTML_FILES])
-        .pipe(builder.build())
+        .pipe(emailBuilder({
+          encodeSpecialChars: true
+        }).build())
         .pipe(gulp.dest(env.HTML_DEST));
       }, 100)
     } else {
