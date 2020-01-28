@@ -3,7 +3,8 @@
 # Email-Boilerplate
 
 ## Requirements
-1. NODE
+1. node ^12.14.1
+2. npm ^6.13.4
 
 ## Commands
 1. `npm run start` - Browser sync + watch
