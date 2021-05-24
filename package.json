@@ -27,7 +27,7 @@
   "homepage": "https://github.com/tetloose/email-boilerplate",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "browserslist": "^4.8.2",
+    "browserslist": "^4.16.5",
     "del": "^5.1.0",
     "dotenv": "^8.2.0",
     "gulp": "^4.0.2",
