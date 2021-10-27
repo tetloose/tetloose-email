@@ -10,6 +10,3 @@ indent_size = 2
 
 [*.{md,markdown}]
 trim_trailing_whitespace = false
-
-[*.{html,php,css,scss,sass}]
-indent_size = 4

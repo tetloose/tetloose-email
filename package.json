@@ -1,5 +1,5 @@
 {
-  "name": "Email-Boilerplate",
+  "name": "email-boilerplate",
   "scripts": {
     "start": "gulp",
     "images": "gulp images",
@@ -26,20 +26,20 @@
   },
   "homepage": "https://github.com/tetloose/email-boilerplate",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "browserslist": "^4.8.2",
+    "browser-sync": "^2.27.6",
+    "browserslist": "^4.17.5",
     "del": "^5.1.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-email-builder-min": "0.0.1",
     "gulp-email-builder": "^3.0.0",
+    "gulp-email-builder-min": "0.0.1",
     "gulp-filter": "^6.0.0",
     "gulp-hub": "^4.2.0",
     "gulp-imagemin": "^6.2.0",
-    "gulp-load-plugins": "^2.0.1",
+    "gulp-load-plugins": "^2.0.7",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.1",
     "imagemin-pngquant": "^8.0.0",
     "node-notifier": "^6.0.0",
     "require-dir": "^1.2.0"
