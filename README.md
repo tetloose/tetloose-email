@@ -13,22 +13,22 @@
 4. `npm run build` - Add build files to zip
 
 ## Template Files
-1. html template `/dev/template/*.html`
+1. html template `/src/template/*.html`
 
 ## CSS
-1. Reset `/dev/scss/reset.scss` - Embeded in head
-2. Inline `/dev/scss/inline.scss` - Injected into markup
-3. Mobile `/dev/scss/mobile.scss` - Embeded in head below reset
+1. Reset `/src/scss/reset.scss` - Embeded in head
+2. Inline `/src/scss/inline.scss` - Injected into markup
+3. Mobile `/src/scss/mobile.scss` - Embeded in head below reset
 
 ## Image minification
-1. Image folder `/dev/images/`
+1. Image folder `/src/images/`
 2. Run `npm run images`
 3. Images Minified and moved to `/dest/images/`
 
 ## Email Test
 1. Update .env test variables `line 14 - 17`
 ```
-TEST_FILE = './build/index.html'
+TEST_FILE = './dist/index.html'
 TEST_EMAIL_TO = 'tetloose@gmail.com'
 TEST_EMAIL_FROM = 'tetloose@gmail.com'
 TEST_SUBJECT = 'Gulp Email Test'
@@ -39,9 +39,9 @@ TEST_SUBJECT = 'Gulp Email Test'
 ## Build
 This builds a zip ready to be uploaded to mailchimp
 1. Run `npm run build`
-2. Copy html template name excluding the .html 
+2. Copy html template name excluding the .html
 3. Paste and hit `Enter`
-4. Zip file created by name and date, then moved to ./build/zips
+4. Zip file created by name and date, then moved to ./dist/zips
 5. Upload this zip to `mailchimp`
 
 ## Usefull links

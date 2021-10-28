@@ -2,7 +2,7 @@
 .sass-cache/
 
 ### Compiled media ###
-build/*
+dist/*
 
 ### Node ###
 logs/

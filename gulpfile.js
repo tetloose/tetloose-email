@@ -1,11 +1,11 @@
 'use strict';
 
 const gulp = require('gulp'),
-      requireDir = require('require-dir'),
-      tasks = requireDir('./.gulp/tasks'),
-      envConfig = require('dotenv').config(),
-      env = envConfig.parsed,
-      browserSync = require('browser-sync');
+requireDir = require('require-dir'),
+tasks = requireDir('./.gulp/tasks'),
+envConfig = require('dotenv').config(),
+env = envConfig.parsed,
+browserSync = require('browser-sync');
 
 function reload(cb) {
   browserSync.reload();
