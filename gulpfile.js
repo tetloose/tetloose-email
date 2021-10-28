@@ -68,5 +68,8 @@ gulp.task('watch', (cb) => {
   cb();
 });
 
+// Build
+gulp.task('build', gulp.series(['images'], ['styles'], ['emailBuilder']));
+
 // Default
 gulp.task('default', gulp.series(['images'], ['styles'], ['emailBuilder'], ['browserSync'], ['notification'], ['watch']));

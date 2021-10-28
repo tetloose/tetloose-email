@@ -1,10 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-GB">
   <head>
-    <title>Your Message Subject or Title</title>
-    <meta charset="utf-8">
+    <title>*|MC:SUBJECT|*</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- NAME: ANNOUNCE -->
+    <!--[if gte mso 15]>
+    <xml>
+      <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
     <link rel="stylesheet" type="text/css" href="../../build/stylesheet/reset.css" data-embed>
     <link rel="stylesheet" type="text/css" href="../../build/stylesheet/inline.css">
     <link rel="stylesheet" type="text/css" href="../../build/stylesheet/mobile.css" data-embed>
@@ -32,7 +41,7 @@
                                     <tr>
                                       <td align="left" class="content__small content__link">
                                         <span class="content__small content__link">
-                                          <a href="">View in browser</a>
+                                          <a href="*|ARCHIVE|*">View this email in your browser</a>
                                         </span>
                                       </td>
                                     </tr>
@@ -250,6 +259,70 @@
         </td>
       </tr>
     </table>
+    <!-- SINGLE COLUMN -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td bgcolor="#ffffff" align="center">
+          <table border="0" cellpadding="0" cellspacing="0" width="540" class="l-row--540">
+            <tr>
+              <td bgcolor="#ffffff" align="center">
+                <!-- START OF SINGLE COLUMN -->
+                <table border="0" cellpadding="0" cellspacing="0" width="500" class="l-row--500">
+                  <tr>
+                    <td align="left" class="padding--bottom-40">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="left" class="padding--top-40">
+                                  <!-- CONTENT BLOCK -->
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td align="left" class="content__small">
+                                        <span class="content__small">
+                                          Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
+                                        </span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" class="content__small">
+                                        <span class="content__small">
+                                          *|IFNOT:ARCHIVE_PAGE|*
+                                            *|LIST:DESCRIPTION|*
+                                            <br>
+                                            <br>
+                                            <strong>Our mailing address is:</strong>
+                                            <br>
+                                            *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+                                            <br>
+                                            <br>
+                                            Want to change how you receive these emails?<br>
+                                            You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe from this list</a>.
+                                            <br>
+                                            <br>
+                                            *|IF:REWARDS|* *|HTML:REWARDS|*
+                                          *|END:IF|*
+                                        </span>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
     <img class="image--gmail-500-1" src="images/spacer.png" width="500" height="1" border="0" alt="">
     <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;

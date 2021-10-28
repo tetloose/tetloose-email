@@ -2,20 +2,29 @@
 
 #COMMANDS
 # ./toolkit build
-
-#START TOOL KIT
 clear
-echo "Starting theme toolkit..."
+echo "Starting toolkit..."
 
 # ./toolkit build
 if [ "$1" = "build" ]; then
-  eval ls -lah build/*.html
+  if [ ! -d ./build/zips ]; then
+    echo "Generating ZIP's folder..."
+    mkdir -p ./build/zips
+    echo "Done!"
+    echo ""
+    echo ""
+    echo ""
+  fi
+  echo "Starting build..."
+  eval cd ./dev/template
+  eval ls -1 | sed -e 's/\.html$//'
   read -p "What template would you like to build i.e index, email-title-1? " template
+  eval cd ../../
   eval mkdir "$template"
   eval cp ./build/"$template".html ./"$template"/index.html
   eval cp -r ./build/images ./"$template"
   eval zip -r "$template"-$(date +"%Y-%m-%d").zip ./"$template"
-  eval mv "$template"-$(date +"%Y-%m-%d").zip build/zips/
+  eval mv -i "$template"-$(date +"%Y-%m-%d").zip build/zips
   eval rm -rf ./"$template"
   echo "Build created $(date +"%Y-%m-%d");"
 else

@@ -1,10 +1,10 @@
 {
   "name": "email-boilerplate",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp",
     "images": "gulp images",
     "test": "gulp test",
-    "build": "./toolkit build"
+    "build": "clear && ./toolkit build"
   },
   "version": "0.0.1",
   "description": "Gulp email generator",
