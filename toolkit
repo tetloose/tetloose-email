@@ -4,18 +4,16 @@
 # ./toolkit build
 clear
 echo "Starting toolkit..."
+echo ""
 
 # ./toolkit build
 if [ "$1" = "build" ]; then
   if [ ! -d ./dist/zips ]; then
-    echo "Generating ZIP's folder..."
     mkdir -p ./dist/zips
-    echo "Done!"
   fi
-  echo "Starting build..."
-  eval cd ./src/template
+  eval cd ./src/templates
   eval ls -1 | sed -e 's/\.html$//'
-  read -p "What template would you like to build i.e index, email-title-1? " template
+  read -p "Type which template would you like to build i.e index? " template
   eval cd ../../
   eval mkdir "$template"
   eval cp ./dist/"$template".html ./"$template"/index.html

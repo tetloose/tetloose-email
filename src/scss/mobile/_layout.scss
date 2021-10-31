@@ -1,0 +1,21 @@
+@media screen and (max-width: 525px) {
+  table[class="l-row-540"],
+  table[class="l-row-500"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  td[class="l-row-mobile-gutter"] {
+    padding: 0 5% 0 5% !important;
+  }
+
+  table[class="l-row-210"] {
+    float: left !important;
+    clear: both !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+}

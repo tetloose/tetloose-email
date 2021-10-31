@@ -1,12 +1,12 @@
 .button {
   display: inline-block;
 
-  background-color: #256F9C;
+  background-color: $button;
 
-  border-top: 15px solid #256F9C;
-  border-bottom: 15px solid #256F9C;
-  border-left: 25px solid #256F9C;
-  border-right: 25px solid #256F9C;
+  border-top: 15px solid $button;
+  border-bottom: 15px solid $button;
+  border-left: 25px solid $button;
+  border-right: 25px solid $button;
   border-radius: 3px;
 
   color: $white;

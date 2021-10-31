@@ -2,18 +2,30 @@
 
 # Email-Boilerplate
 
+## Setup
+`npm i && npm run dev`
+
+## How to use
+Create email templates in `./src/templates/*.html` include partials from `./src/partials`. After saving, partials are merged into `./src/email/*.html` then automaticly moved to `./dist/*.html` with css injected into markup.
+
 ## Requirements
 1. node ^12.14.1
 2. npm ^6.13.4
 
 ## Commands
-1. `npm run start` - Browser sync + watch
+1. `npm run dev` - Browser sync + watch
 2. `npm run images` - Image Minification
-3. `npm run test` - Sends test email
-4. `npm run build` - Add build files to zip
+3. `npm run build` - Add build files to zip
+4. `npm run partials` - Compiles partials into templates
+5. `npm run build` - Add build files to zip
 
-## Template Files
-1. html template `/src/template/*.html`
+## Templates
+1. html templates `/src/templates/*.html`
+
+## Partials
+1. html templates `/src/partials/*.html`
+
+Include partials `@@include('../partials/header.html')`.
 
 ## CSS
 1. Reset `/src/scss/reset.scss` - Embeded in head
@@ -23,7 +35,7 @@
 ## Image minification
 1. Image folder `/src/images/`
 2. Run `npm run images`
-3. Images Minified and moved to `/dest/images/`
+3. Images Minified and moved to `/dist/images/`
 
 ## Email Test
 1. Update .env test variables `line 14 - 17`
@@ -39,10 +51,15 @@ TEST_SUBJECT = 'Gulp Email Test'
 ## Build
 This builds a zip ready to be uploaded to mailchimp
 1. Run `npm run build`
-2. Copy html template name excluding the .html
+2. Copy html template name from the list
 3. Paste and hit `Enter`
 4. Zip file created by name and date, then moved to ./dist/zips
 5. Upload this zip to `mailchimp`
+6. Test in mailchimp, realise every email client does it's own thing and nothing works.
+7. Throw laptop into the sea!
+
+## Note!
+If you get an error on first load, save the template the refresh the page, will fix that issue. Sometimes CSS isn't injected during build, fix this by re running the build process.
 
 ## Usefull links
 `https://github.com/Email-builder/gulp-email-builder`

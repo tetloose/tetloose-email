@@ -4,8 +4,7 @@ const gulp = require('gulp'),
       plumber = require('gulp-plumber'),
       sass = require('gulp-sass'),
       autoprefixer = require('gulp-autoprefixer'),
-      filter = require('gulp-filter'),
-      browserSync = require('browser-sync');
+      filter = require('gulp-filter');
 
 function scssError(e) {
   tasks.notification.default('❌ CSS Fail ❌', 'Check terminal', true);

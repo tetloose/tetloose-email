@@ -1,0 +1,31 @@
+@media screen and (max-width: 525px) {
+  td[class="hide-on--mobile"],
+  img[class="hide-on--mobile"] {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    visibility: none !important;
+
+    font-size: 0 !important;
+    line-height: 0 !important;
+  }
+
+  td[class="show-on-mobile"],
+  img[class="show-on-mobile"] {
+    display: block !important;
+    width: auto !important;
+    min-width: auto !important;
+    max-width: auto !important;
+    height: auto !important;
+    min-height: none !important;
+    max-height: none !important;
+    visibility: visible !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}

@@ -3,6 +3,7 @@
 
 ### Compiled media ###
 dist/*
+src/email/*.html
 
 ### Node ###
 logs/

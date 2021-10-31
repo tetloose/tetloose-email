@@ -8,7 +8,7 @@ module.exports = {
   dev: (env) => {
     if (emailBuilderLoaded) {
       setTimeout(() => {
-        return gulp.src([env.HTML_FILES])
+        return gulp.src([env.EMAIL_FILES])
         .pipe(emailBuilder({
           encodeSpecialChars: true
         }).build())
@@ -16,7 +16,7 @@ module.exports = {
       }, 100)
     } else {
       emailBuilderLoaded = true;
-      return gulp.src([env.HTML_FILES])
+      return gulp.src([env.EMAIL_FILES])
       .pipe(emailBuilder({
         encodeSpecialChars: true
       }).build())

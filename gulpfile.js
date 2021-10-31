@@ -23,6 +23,12 @@ gulp.task('notification:images', (cb) => {
   cb();
 });
 
+// Partials
+gulp.task('partials', (cb) => {
+  tasks.partials.compile(env);
+  cb();
+});
+
 // Styles
 gulp.task('styles', (cb) => {
   tasks.styles.dev(env);
@@ -59,17 +65,18 @@ gulp.task('emailBuilder:test', (cb) => {
   cb();
 });
 
-gulp.task('test', gulp.parallel(['image:clean'], ['image:min'], ['styles'], ['emailBuilder'], ['emailBuilder:test']));
-
 // Watch
 gulp.task('watch', (cb) => {
-  gulp.watch([env.SCSS_FILES, env.HTML_FILES], gulp.series(['styles'], ['emailBuilder'], reload));
+  gulp.watch([env.SCSS_FILES, env.HTML_TEMPLATES, env.HTML_PARTIALS], gulp.series(['partials'], ['styles'], ['emailBuilder'], reload));
   gulp.watch(env.IMG_FILES, gulp.series(['images'], reload));
   cb();
 });
 
 // Build
-gulp.task('build', gulp.series(['images'], ['styles'], ['emailBuilder']));
+gulp.task('build', gulp.series(['images'], ['partials'], ['styles'], ['emailBuilder']));
+
+// Test
+gulp.task('test', gulp.series(['build'], ['emailBuilder:test']));
 
 // Default
-gulp.task('default', gulp.series(['images'], ['styles'], ['emailBuilder'], ['browserSync'], ['notification'], ['watch']));
+gulp.task('default', gulp.series(['build'], ['emailBuilder'], ['browserSync'], ['notification'], ['watch']));
