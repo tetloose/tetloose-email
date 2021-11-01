@@ -1,21 +1,21 @@
 .button {
-  display: inline-block;
+  display: inline-block !important;
+  width: 200px;
 
-  background-color: $button;
+  background-color: $button !important;
 
-  border-top: 15px solid $button;
-  border-bottom: 15px solid $button;
-  border-left: 25px solid $button;
-  border-right: 25px solid $button;
-  border-radius: 3px;
-
-  color: $white;
-  font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  text-decoration: none;
+  border-width: 10px 0 !important;
+  border-style: solid !important;
+  border-color: $button !important;
+  border-radius: 4px !important;
 
   color: $white !important;
+  font-family: sans-serif !important;
+  font-size: 16px !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: normal !important;
+  line-height: 40px !important;
+  text-align: center !important;
   text-decoration: none !important;
-  font-size: inherit !important;
+  -webkit-text-size-adjust: none !important;
 }

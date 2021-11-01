@@ -31,10 +31,3 @@ u + #body a {
   font-weight: inherit !important;
   line-height: inherit !important;
 }
-
-button[x-apple-data-detectors],
-u + #body .button,
-#MessageViewBody .button,
-.button {
-  color: $white !important;
-}
