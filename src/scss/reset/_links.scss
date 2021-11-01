@@ -1,0 +1,40 @@
+/* BLUE LINKS */
+a {
+  color: $body !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+a[x-apple-data-detectors] {
+  color: $body !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+u + #body a {
+  color: $body !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+#MessageViewBody a {
+  color: $body !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+button[x-apple-data-detectors],
+u + #body .button,
+#MessageViewBody .button,
+.button {
+  color: $white !important;
+}

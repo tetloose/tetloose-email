@@ -1,3 +1,5 @@
-@import './reset/client-specific',
+@import './inline/lib/color',
+        './inline/settings/colors',
+        './reset/client-specific',
         './reset/reset',
-        './reset/ios-blue-links';
+        './reset/links';
