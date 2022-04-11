@@ -1,6 +1,7 @@
 {
   "name": "email-boilerplate",
   "scripts": {
+    "setup": "npm i; gulp build; npm run dev",
     "dev": "gulp",
     "images": "gulp images",
     "test": "gulp test",
