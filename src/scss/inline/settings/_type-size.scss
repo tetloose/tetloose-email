@@ -1,0 +1,24 @@
+@mixin type-heading() {
+  font-size: 16px !important;
+  line-height: 16px !important;
+}
+
+@mixin type-body() {
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+@mixin type-small() {
+  font-size: 11px !important;
+  line-height: 16px !important;
+}
+
+@mixin type-td() {
+  font-size: 10px !important;
+  line-height: 16px !important;
+}
+
+@mixin type-tiny() {
+  font-size: 8px !important;
+  line-height: 16px !important;
+}
