@@ -1,4 +1,9 @@
-@import './mobile/buttons',
-        './mobile/images',
-        './mobile/layout',
-        './mobile/show-hide';
+@import './inline/lib/color',
+        './inline/settings/colors',
+        './inline/settings/fonts',
+        './inline/settings/type-size';
+
+@import './inline/theme/content';
+
+@import './mobile/images',
+        './mobile/layout';
