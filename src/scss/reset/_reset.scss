@@ -1,4 +1,9 @@
 /* RESET STYLES */
+html,
+body {
+  padding: 0;
+}
+
 body {
   height: 100% !important;
   width: 100% !important;
@@ -17,14 +22,13 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-  padding: 0;
-  margin: 0;
   vertical-align: top;
+  margin: 0;
 
   border: 0;
 
-  font: inherit;
   outline: 0;
+  font: inherit;
 }
 
 img {
