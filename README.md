@@ -4,13 +4,13 @@
 
 ## Initial Setup
 
-`npm run setup`
+`yarn setup`
 
-Installs node modules, builds an email, then runs `npm run dev` - **First load might require a page refresh**
+Installs node modules, builds an email, then runs `yarn dev` - **First load might require a page refresh**
 
 ## How to use
 
-`npm run dev` - Start the framework
+`yarn dev` - Start the framework
 
 Create email templates in `./src/templates/*.html` include partials from `./src/partials`. After saving, partials are merged into `./src/email/*.html` then automaticly moved to `./dist/*.html` with css injected into markup.
 
@@ -21,11 +21,11 @@ Create email templates in `./src/templates/*.html` include partials from `./src/
 
 ## Commands
 
-1. `npm run dev` - Browser sync + watch
-2. `npm run images` - Image Minification
-3. `npm run build` - Add build files to zip
-4. `npm run partials` - Compiles partials into templates
-5. `npm run build` - Add build files to zip
+1. `yarn dev` - Browser sync + watch
+2. `yarn images` - Image Minification
+3. `yarn build` - Add build files to zip
+4. `yarn partials` - Compiles partials into templates
+5. `yarn build` - Add build files to zip
 
 ## Templates
 
@@ -46,7 +46,7 @@ Include partials `@@include('../partials/header.html')`.
 ## Image minification
 
 1. Image folder `/src/images/`
-2. Run `npm run images`
+2. Run `yarn images`
 3. Images Minified and moved to `/dist/images/`
 
 ## Email Test
@@ -60,14 +60,14 @@ TEST_EMAIL_FROM = 'tetloose@gmail.com'
 TEST_SUBJECT = 'Gulp Email Test'
 ```
 
-2. Run `npm run test`
+2. Run `yarn test`
 3. Visit email client, look in `SPAM` folder
 
 ## Build
 
 This builds a zip ready to be uploaded to mailchimp
 
-1. Run `npm run build`
+1. Run `yarn build`
 2. Copy html template name from the list
 3. Paste and hit `Enter`
 4. Zip file created by name and date, then moved to ./dist/zips

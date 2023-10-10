@@ -1,7 +1,7 @@
 {
   "name": "email-boilerplate",
   "scripts": {
-    "setup": "npm i; gulp build; npm run dev",
+    "setup": "yarn; gulp build; yarn dev",
     "dev": "gulp",
     "images": "gulp images",
     "test": "gulp test",
@@ -33,6 +33,7 @@
     "dotenv": "^8.6.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-dart-sass": "^1.1.0",
     "gulp-email-builder": "^3.0.0",
     "gulp-email-builder-min": "0.0.1",
     "gulp-file-include": "^2.3.0",
@@ -41,9 +42,9 @@
     "gulp-imagemin": "^6.2.0",
     "gulp-load-plugins": "^2.0.7",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.1.1",
     "imagemin-pngquant": "^8.0.0",
     "node-notifier": "^6.0.0",
-    "require-dir": "^1.2.0"
+    "require-dir": "^1.2.0",
+    "sass": "^1.69.1"
   }
 }
