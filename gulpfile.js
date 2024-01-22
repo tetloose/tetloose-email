@@ -1,27 +1,16 @@
 'use strict';
 
 const gulp = require('gulp'),
-requireDir = require('require-dir'),
-tasks = requireDir('./.gulp/tasks'),
-envConfig = require('dotenv').config(),
-env = envConfig.parsed,
-browserSync = require('browser-sync');
+      requireDir = require('require-dir'),
+      tasks = requireDir('./.gulp/tasks'),
+      envConfig = require('dotenv').config(),
+      env = envConfig.parsed,
+      browserSync = require('browser-sync');
 
 function reload(cb) {
   browserSync.reload();
   cb();
 };
-
-// Notifications
-gulp.task('notification', (cb) => {
-  tasks.notification.default('Theme', 'Ready...🦉');
-  cb();
-});
-
-gulp.task('notification:images', (cb) => {
-  tasks.notification.default('Images', 'Saved...☄️');
-  cb();
-});
 
 // Partials
 gulp.task('partials', (cb) => {
@@ -52,7 +41,7 @@ gulp.task('image:clean', (cb) => {
   cb();
 });
 
-gulp.task('images', gulp.parallel(['image:clean'], ['image:min'], ['notification:images']));
+gulp.task('images', gulp.parallel(['image:clean'], ['image:min']));
 
 // Email Builder
 gulp.task('emailBuilder', (cb) => {
@@ -79,4 +68,4 @@ gulp.task('build', gulp.series(['images'], ['partials'], ['styles'], ['emailBuil
 gulp.task('test', gulp.series(['build'], ['emailBuilder:test']));
 
 // Default
-gulp.task('default', gulp.series(['build'], ['emailBuilder'], ['browserSync'], ['notification'], ['watch']));
+gulp.task('default', gulp.series(['build'], ['emailBuilder'], ['browserSync'], ['watch']));

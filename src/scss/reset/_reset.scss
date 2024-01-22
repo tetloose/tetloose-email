@@ -28,9 +28,9 @@ section, summary, time, mark, audio, video {
   border: 0;
 
   outline: 0;
-  font: inherit;
 }
 
+a img,
 img {
   display: block;
   height: auto;
@@ -42,6 +42,7 @@ img {
   outline: none;
 }
 
-table {
+table,
+td {
   border-collapse: collapse !important;
 }
